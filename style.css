@@ -27,19 +27,22 @@ h1, h3, span, p{
     color: var(--white)
 }
 
-h1{
-    font-size: 3rem;
-}
-
-
 .main-container{
     display: flex;
-    margin: 1rem auto 0;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
 .main-container a{
     color: var(--tertiary1);
     text-decoration: none;
+}
+
+.main-container h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 button{
@@ -86,4 +89,51 @@ input{
     display: flex;
     justify-content: center;
     margin: 1rem auto;
+}
+
+.subscribe-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.time-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--black2);
+}
+
+.time-section h1{
+    font-size: 2rem;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 160px;
+    margin: .4rem;
+    padding: 1rem;
+    color: --var(--black2);
+    background:var(--tertiary1);
+    box-shadow: 0 0 48px 0 var(--secondary2);
+}
+
+.card span{
+    font-size: 3rem;
+    font-weight: 500;
 }
