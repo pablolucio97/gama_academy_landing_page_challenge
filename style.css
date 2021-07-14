@@ -3,6 +3,11 @@
     --black1: #000;
     --black2: #111;
     --darkgray: #222;
+    --primary1: #ffe41b;
+    --primary2: #e6d346;
+    --secondary1: #581bff;
+    --secondary2: #7146e6;
+    --tertiary1: #ff1bc2;
 }
 
 
@@ -18,3 +23,67 @@ body{
 }
 
 
+h1, h3, span, p{
+    color: var(--white)
+}
+
+h1{
+    font-size: 3rem;
+}
+
+
+.main-container{
+    display: flex;
+    margin: 1rem auto 0;
+}
+
+.main-container a{
+    color: var(--tertiary1);
+    text-decoration: none;
+}
+
+button{
+    padding: .2rem .4rem;
+    background: var(--secondary2);
+    border: none;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    color: var(--white);
+    font-size: 1rem;
+    transition: all .5s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 48px 0 var(--secondary1);
+}
+
+input{
+    padding: .2rem .4rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.info-container h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary2);
+    text-align: center;
+}
+
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
