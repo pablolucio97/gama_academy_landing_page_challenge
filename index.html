@@ -17,16 +17,13 @@
         <section class="welcome-section">
             <div class="welcome-container">
                 <h1>{ Maratona Dev }</h1>
-                <h3>Esteja entre os melhores, faça parte da melhor comunidade dev
-                    do Brasil!
-                </h3>
                 <span>87% de nossos alunos estão inseridos no mercado, comece ainda hoje!</span>
-                <a href='#input-container'>Quero me cadastrar</a>
+                <a href='#time-section'>Quero participar</a>
             </div>
         </section>
-        <section class="time-section">
+        <section class="time-section" id='time-section'>
             <h1>Ofertas da Maratona Dev expiram em:</h1>
-            <div class="cards-container">
+            <div class="cards-container" id='cards-container'>
                 <div class="card">
                     <span>01</span>
                     <p>dias</p>
@@ -40,13 +37,19 @@
                     <p>minutos</p>
                 </div>
             </div>
+                <div>
+                    <a href="#input-container">Fazer inscrição</a>
+                </div>
         </section>
         <section class="subscribe-section">
             <div class="main-container">
                 <div class="info-container">
                     <h1>{ Maratona Dev }</h1>
-                    <h3>Até 60% de desconto se matriculando agora!</h3>
-                    <span>Invista em sua carreira e comece já!</span>
+                    <div class="deals-container">
+                        <h3>Até</h3>
+                        <h1>60%</h1>
+                        <h3>de desconto se matriculando agora!</h3>
+                    </div>
                     <div id='input-container' class="input-container">
                         <input type="text" placeholder="seu melhor e-mail">
                         <button>Estou dentro</button>
@@ -55,8 +58,29 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="links-container">
+                <span>Links úteis</span>
+                <a href="#">Plataforma</a>
+                <a href="#">Maratona Dev</a>
+            </div>
+            <div class="social-container">
+                <span>Nossas redes sociais</span>
+                <a href="#"> <i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact-container">
+                <span>Contato</span>
+                <p>João Monlevade - MG</p>
+                <p>somebody_@hotmail.com</p>
+                <p>+55 31 912341234</p>
+            </div>
+        </footer>
     </main>
     <script src='script.js'></script>
+    <script src="https://use.fontawesome.com/4a183084e8.js"></script>
 </body>
 
 </html>
