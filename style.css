@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 280px;
 }
 
 body {
@@ -32,7 +33,65 @@ p {
   color: var(--white);
 }
 
-.main-container {
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-image: url("assets/code1.jpg");
+  background-repeat: no-repeat;
+  background-size: 62%;
+  background-position: center ;
+}
+
+.welcome-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0 1rem;
+}
+
+.welcome-container h1 {
+  font-size: 3.4rem;
+}
+
+.welcome-container h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 720px;
+  text-align: center;
+  margin: 0 auto 1rem;
+}
+
+.welcome-container span {
+  margin: 0.4rem auto 1rem;
+  color: var(--tertiary1);
+  font-size: 1.6rem;
+  width: 720px;
+  text-align: center;
+}
+
+.welcome-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary1);
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 0.4rem;
+  color: var(--black1);
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.subscribe-container {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -40,30 +99,36 @@ p {
   padding: 1rem;
 }
 
-.main-container a {
-  color: var(--tertiary1);
+.welcome-container a:hover {
+  cursor: pointer;
+  box-shadow: 0 0 48px 0 var(--secondary1);
+}
+
+.subscribe-container a {
+  color: var(--primary2);
   text-decoration: none;
 }
 
-.main-container h1 {
+.subscribe-container h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
-.main-container button {
+.subscribe-container button {
   padding: 0.2rem 0.4rem;
-  background: var(--secondary2);
+  background: var(--tertiary1);
   border: none;
   outline: none;
   border-radius: 0 4px 4px 0;
   color: var(--white);
   font-size: 1rem;
   transition: all 0.5s ease;
+  text-transform: uppercase;
 }
 
-.main-container button:hover {
+.subscribe-container button:hover {
   cursor: pointer;
-  box-shadow: 0 0 48px 0 var(--secondary1);
+  box-shadow: 0 0 48px 0 var(--tertiary1);
 }
 
 input {
@@ -109,7 +174,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    padding: .4rem;
     background: var(--tertiary1);
     text-decoration: none;
     border: none;
@@ -156,76 +221,9 @@ input {
 }
 
 .card p {
-
   color: var(--primary2);
 }
 
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
-  background-image: url("assets/code1.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.welcome-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 2rem 0 1rem;
-}
-
-.time-section a {
-  font-size: 3rem;
-  animation: animated-cta-button 2.4s ease infinite;
-}
-
-.welcome-container h1 {
-  font-size: 3.4rem;
-}
-
-.welcome-container h3 {
-  font-size: 1.2rem;
-  font-weight: 300;
-  width: 720px;
-  text-align: center;
-  margin: 0 auto 1rem;
-}
-
-.welcome-container span {
-  margin: 0.4rem auto 1rem;
-  color: var(--tertiary1);
-  font-size: 1.6rem;
-  width: 720px;
-  text-align: center;
-}
-
-.welcome-container a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary1);
-  border: none;
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 0.4rem;
-  color: var(--black1);
-  font-size: 1rem;
-  transition: all 0.5s ease;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.welcome-container a:hover {
-  cursor: pointer;
-  box-shadow: 0 0 48px 0 var(--secondary1);
-}
 
 .opacity-effect {
   opacity: (0.2);
@@ -255,7 +253,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 240px;
+  height: 24vh;
   background: var(--primary1);
   width: 100%;
   margin: 0 auto;
@@ -297,14 +295,101 @@ footer div a:hover {
   font-weight: 500;
 }
 
-@keyframes animated-cta-button {
-  0% {
-    bottom: 1rem;
+
+@media(max-width: 1080px){
+  .welcome-section{
+    background-size: 88%;
+    padding: 1rem;
   }
-  50% {
-    bottom: 0;
+}
+
+@media(max-width: 720px){
+
+  .welcome-section{
+    background-size: 108%;
+    padding: 1rem;
   }
-  100% {
-    bottom: 1rem;
+
+  .welcome-container h1{
+    font-size: 2rem;
+    text-align: center;
   }
+
+  .welcome-container span{
+    font-size: 1.32rem;
+    width: 100%;
+    margin: 1rem;
+    
+  }
+
+ 
+  .cards-container{
+    flex-direction: column;
+  }
+  
+  .time-section h1{
+    font-size: 1.4rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .time-section div a{
+    font-size: 1rem;
+    padding: .4rem;
+    height: 40px;
+  }
+
+  .card{
+    width: 146px;
+  }
+
+  .subscribe-container{
+    flex-direction: column;
+  }
+
+  .subscribe-container h1{
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .deals-container{
+    flex-direction: column;
+  }
+
+  .deals-container h1{
+    margin: 0 auto;
+  }
+
+  .subscribe-section{
+    height: 56vh;
+    align-items: center;
+  }
+
+  .input-container{
+    flex-direction: column;
+  }
+
+  .input-container input{
+    border-radius: 4px 4px 0 0;
+  }
+
+  .input-container button{
+    border-radius: 0 0 4px 4px;
+  }
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+    height: 44vh;
+  }
+
+  footer span{
+    font-size: 1rem;
+  }
+
+  footer div{
+    margin: .4rem auto
+  }
+
 }
