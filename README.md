@@ -13,11 +13,6 @@
   <img alt="maratonadev" src="https://i.ibb.co/MVvn6C6/shotsnapp-1626465355-167.png" width="100%">
 </p>
 
-<style>
-html{
-    scroll-behavior: smooth;
-}
-</style>
 
 ## 💻 Projeto
 
