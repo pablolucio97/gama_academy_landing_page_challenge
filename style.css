@@ -357,6 +357,10 @@ footer div a:hover {
     height: 40px;
   }
 
+  .time-section h1 {
+    margin-top: -2rem;
+  }
+
   .card{
     width: 146px;
     height: 120px;
