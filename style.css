@@ -173,7 +173,7 @@ input {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  min-height: 880px;
+  min-height: 800px;
   background: var(--primary1);
 
 }
@@ -359,6 +359,7 @@ footer div a:hover {
 
   .card{
     width: 146px;
+    height: 120px;
   }
 
   .subscribe-container{
