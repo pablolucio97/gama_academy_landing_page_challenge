@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Maratona Dev</title>
 </head>
 
 <body>
@@ -25,16 +25,20 @@
             <h1>Ofertas da Maratona Dev expiram em:</h1>
             <div class="cards-container" id='cards-container'>
                 <div class="card">
-                    <span>01</span>
+                    <span id="days">02</span>
                     <p>dias</p>
                 </div>
                 <div class="card">
-                    <span>01</span>
+                    <span id='hours'>13</span>
                     <p>horas</p>
                 </div>
                 <div class="card">
-                    <span>01</span>
+                    <span id='minutes'>59</span>
                     <p>minutos</p>
+                </div>
+                <div class="card">
+                    <span id='seconds'>54</span>
+                    <p>segundos</p>
                 </div>
             </div>
             <div>
@@ -51,9 +55,12 @@
                         <h3>de desconto se matriculando agora!</h3>
                     </div>
                     <div id='input-container' class="input-container">
-                        <input type="text" placeholder="seu melhor e-mail">
-                        <button>Estou dentro</button>
+                        <form action="">
+                            <input type="email" required placeholder="seu melhor e-mail">
+                            <button id='subscribe-btn' type="submit">Estou dentro</button>
+                        </form>
                     </div>
+                    <span class="subscribed"></span>
                     <a href='#'>Seguir para a plataforma</a>
                 </div>
             </div>
@@ -78,9 +85,9 @@
             </div>
             <div class="contact-container">
                 <span>Contato</span>
-                <p>João Monlevade - MG</p>
                 <p>suporte@maratonadev.com</p>
                 <p>+55 31 912341234</p>
+                <p>João Monlevade - MG</p>
             </div>
         </footer>
     </main>
